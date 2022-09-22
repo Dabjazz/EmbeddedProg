@@ -78,3 +78,20 @@ void counter(unsigned int x)
 	 
 
 }
+void lcd_hex_num(unsigned int num)
+{
+	unsigned int rem;
+    if(num)
+    {
+    lcd_hex_num(num/16);
+       rem=(num%16);
+           if(rem>9)
+        {
+        lcd_data(rem+0x37);
+        }
+              else
+        {
+        lcd_data(rem+0x30);
+        }
+    }
+}

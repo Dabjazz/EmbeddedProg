@@ -12,3 +12,4 @@ void delay(unsigned int a);
 void lcd_str(unsigned char *ptr);
 void lcd_num(unsigned int num);
 void counter(unsigned int x);
+void lcd_hex_num(unsigned int num);
